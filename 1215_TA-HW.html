@@ -31,7 +31,6 @@
     function getUserInput() {
         var num1 = parseFloat(prompt("Enter the first number:"));
 
-        // Check if the input is a valid number
         while (isNaN(num1)) {
             alert("Please input a valid number.");
             num1 = parseFloat(prompt("Enter the first number:"));
@@ -39,7 +38,6 @@
 
         var num2 = parseFloat(prompt("Enter the second number:"));
 
-        // Check if the input is a valid number
         while (isNaN(num2)) {
             alert("Please input a valid number.");
             num2 = parseFloat(prompt("Enter the second number:"));
@@ -47,7 +45,6 @@
 
         var operation = prompt("Choose an operation (+, -, *, /)");
 
-        // Validate the operation
         while (operation !== "+" && operation !== "-" && operation !== "*" && operation !== "/") {
             alert("Please enter a valid operation.");
             operation = prompt("Choose an operation (+, -, *, /)");
@@ -59,7 +56,6 @@
     do {
         var input = getUserInput();
 
-        // Perform the selected operation
         switch (input.operation) {
             case "+":
                 alert("Result: " + add(input.num1, input.num2));
